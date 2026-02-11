@@ -142,6 +142,11 @@
         </div>
     </div>
 
+<div class="fixed bottom-2 left-2 text-sm text-gray-400">
+    Made by <span class="font-semibold text-gray-600">Dann</span> 💙
+</div>
+
+
     <audio id="romanticMusic" preload="auto" loop>
         <source src="https://cdn.pixabay.com/download/audio/2021/12/15/audio_2e69097bc7.mp3?filename=romantic-guitar-14899.mp3" type="audio/mpeg">
     </audio>
