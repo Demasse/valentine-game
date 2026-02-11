@@ -102,9 +102,9 @@
 <body class="flex items-center justify-center min-h-screen p-4">
 
     <!-- Compteur de vues -->
-    {{-- <div class="view-counter">
+    <div class="view-counter">
         👀 Vues : {{ $views }}
-    </div> --}}
+    </div>
 
     <div class="background-hearts" id="backgroundHearts"></div>
     <canvas id="fireworksCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-10"></canvas>
