@@ -95,9 +95,17 @@
 
         .confetti { position: fixed; width: 15px; height: 15px; background: var(--primary-pink); opacity: 0.8; transform: rotate(45deg); animation: fall linear forwards; }
         @keyframes fall { to { transform: translateY(100vh) rotate(360deg); opacity: 0; } }
+
+        .view-counter { position: fixed; top: 10px; right: 20px; font-size: 1.1rem; color: #fff; font-weight: bold; background: rgba(0,0,0,0.3); padding: 6px 12px; border-radius: 12px; z-index:50; }
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Compteur de vues -->
+    {{-- <div class="view-counter">
+        👀 Vues : {{ $views }}
+    </div> --}}
+
     <div class="background-hearts" id="backgroundHearts"></div>
     <canvas id="fireworksCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-10"></canvas>
 
@@ -244,7 +252,7 @@
             yesBtn.style.pointerEvents='none';
             noBtn.style.pointerEvents='none';
 
-            messageText.innerHTML=`🎉 Yay ! Merci ${userName} ! 💖`;
+            messageText.innerHTML=`🎉! Merci ${userName} ! 💖`;
             messageText.style.color='#ff4b7a';
             messageText.style.fontSize='2.5rem';
             messageText.classList.add('heart-beat');
