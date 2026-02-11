@@ -11,6 +11,7 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
+        port: 3000, // 👈 CHOISIS LE PORT ICI
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
